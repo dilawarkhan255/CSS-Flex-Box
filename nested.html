@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested Flex</title>
+	<style type="text/css">
+		h1{
+		}
+		.container{
+			border:3px solid #000;
+			flex-direction:column;
+			margin:50px;
+			height:150px;
+			display:flex;
+		}
+		.items{
+			font-weight:bold;
+			text-align:center;
+			font-size:20px;
+			color:#fff;
+			padding:0px;
+			height:100px;
+		}
+		.item-1{
+			background:orangered;
+		}
+		.item-2{
+			background:MEDIUMPURPLE;
+			display:flex;
+		}
+		.item-2 > .subitem{
+			background:wheat;
+			color:MEDIUMPURPLE;
+			flex-grow:1;
+			margin:5px;
+		}
+		.item-3{
+			background:hotpink;
+		}
+	</style>
+</head>
+<body>
+	<h1>Css Flex-Box: Nested Flex</h1>
+	<div class="container">
+		<div class="items item-1">One</div>
+		<div class="items item-2">
+			<div class="subitem subitem1">A</div>
+			<div class="subitem subitem2">B</div>
+			<div class="subitem subitem-3">C</div>
+		</div>
+		<div class="items item-3">Three</div>
+	</div>
+</body>
+</html>

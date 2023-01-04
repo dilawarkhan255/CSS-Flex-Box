@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Align Self</title>
+	<style type="text/css">
+		body{
+			font-family:arial,helvetica;
+		}
+		h1{
+			background:#1877EC;
+			padding:0 0 0 40px;
+			color:#fff;
+		}
+		.container{
+			border:3px solid #000;
+			align-items:flex-start;
+			background:#eee;
+			display:flex;
+			padding:10px;
+			margin:50px;
+			height:400px;
+			width:400px;
+		
+		}
+		.items{
+			text-align:center;
+			font-weight:bold;
+			font-size:20px;
+			padding:10px;
+			margin:5px;
+			color:#fff;
+
+		}
+		.item-1{
+			background:orangered;
+			align-self:baseline;
+		}
+		.item-2{
+			background:yellowgreen;
+		}
+		.item-3{
+			background:MEDIUMPURPLE;
+		}
+		.item-4{
+			background:hotpink;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS: Flex-Box</h1>
+	<div class="container">
+		<div class="items item-1" >One </div>
+		<div class="items item-2">Two</div>
+		<div class="items item-3">Three</div>
+		<div class="items item-4">Four</div>
+	</div>
+</body>
+</html>
